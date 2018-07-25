@@ -35,6 +35,7 @@ namespace Lab8
             };
             // flag to keep program running in while loop
             bool isRunning = true;
+            
             while (isRunning)
             {
                 try
@@ -58,7 +59,7 @@ namespace Lab8
                 }
                 catch (FormatException)
                 {
-                    Console.WriteLine("You must enter a number between 0-9");
+                    Console.WriteLine($"You must enter a number between 1-{NUMBER_OF_STUDENTS}");
                 }
                 // if user does not want to look up another student end program else run program from start
                 if (!RunAgain())
